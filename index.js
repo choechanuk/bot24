@@ -1,5 +1,6 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
+const os
 
 client.on('ready', () => {
     console.log('online!');
@@ -27,5 +28,5 @@ client.on('message', (message) => {
     }
 
 })
-
-client.login('NzA1MzY0ODY5Njg3NDEwNjg5.XqqoYA.wPCoUNJ4Y7ED-1CC71KF1aohhCA');
+access_token = os.environ["BOT_TOKEN"]
+client.login('access_token');
